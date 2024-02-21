@@ -1,0 +1,92 @@
+# Kanban
+- Continuous Improvement
+- WIP Limits
+    - Too much work at once
+- Respect for people
+- Elimination of waste
+- Visualize workflow
+- Identify Bottlenecks
+- suitable for team with Continuous stream of work requests
+
+# XP
+- Continuous Integration
+
+# Advantage of Low Coupling
+- minimizes the impact of changes in one component on other components
+
+
+# User Story and Acceptance Criteria for Mail Application
+# User Story 1
+- As a user, I want to be able to edit sent messages, so that I can get rid of typos and unsending messages.
+-> Acceptance Criteria 1
+    - Given that the message is sent,
+        - and the user is logged in,
+    When the user clicks on "Options" button
+        - and clicks on "Edit Message" button after that
+    Then the edit message popup should be shown
+-> Acceptance Criteria 2
+    - Given that the message is sent before 24 hours,
+    When user tries to edit the message
+    Then show error message "Can't edit message sent before 24 hours"
+-> Acceptance Criteria 3
+    - Given that the message is edited,
+        - and the recipient is logged in,
+    When the recipient tries to check the mail,
+    Then he/she should not be able to view the message before edit.
+
+# User Story 2
+As a user, I want to be able to send images/videos in mail, so that I can share it with my family and friends,
+-> Acceptance Criteria 1
+    - Given that the device has no media permissions,
+    When user tries to add media,
+    Then show error message "App has no media permissions"
+    - and ask the user to allow media permissions to the app.
+-> Acceptance Criteria 2
+    - Given that the user is logged in,
+        - and the app has media permissions,
+    When the user clicks on "Add Media" button.
+    Then redirect him to his file system to choose images/videos.
+-> Acceptance Criteria 3
+    - Given that the selected file exceeds more than 700 MB,
+    When user clicks "Send Mail" button,
+    Then show error message "Can't upload files larger than 700 MB"
+
+
+
+User Story and Acceptance Criteria for LMS
+
+# User Story 1
+As a user, I want to be able to view my modules for semester, so that I know what to study.
+-> Acceptance Criteria 1
+    - Given that the user is logged in
+        - and is valid LMS Student,
+    When he/she goes to "Modules" Page,
+    Then show all the modules of his current semester
+-> Acceptance Criteria 2
+    - Given that the user is not logged in,
+        - or is not a valid LMS Student,
+    Then he/she can't view any modules.
+-> Acceptance Criteria 3
+    - Given that the user is in "Modules" Page
+    When he/she clicks on "Filter by Semester" option,
+    Then show the modules of the semester that he/she selects.
+
+# User Story 2
+- As a student, I want to be able to comment on the lecture uploaded by the teacher, so that I can give valuable feedback to the teacher.
+-> Acceptance Criteria 1
+    - Given that the user is not logged in,
+        - or is not enrolled in any module,
+    When he/she tries to add comment on the lecture
+    Then show the error message "You must be enrolled to add comments"
+-> Acceptance Criteria 2
+    - Given that the user is logged in,
+        - and is enrolled in that specific module,
+    When he adds comment    
+        - and clicks on "Add Comment" button,
+    Then show the options to add comment either normally or anonymously.
+-> Acceptance Criteria 3
+    - Given that the user is enrolled in that module,
+    When he tries to add more than 10 comments at a minute,
+    Then he is set timeout for 1 hour 
+    - and comment is marked as spam.
+    - and similar messages are auto deleted.
