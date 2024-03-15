@@ -1,8 +1,26 @@
 import random
+import math
+
+print(f"{0.1:.20f}")
+print(f"{0.2:.20f}")
+print(f"{0.3:.20f}")
+print(f"{0.1 + 0.2:.20f}")
+
+lst = [1, 2, 3]
+lst *= 2
+print(lst)
+
+print(f"The factorial of 5 is {math.factorial(5)}")
+
+a = ("sdsd",)
+print(type(a))
+
+a = {}
+# print(a.pop(1))
 
 # Complex Numbers
-a = 1j + 10
-print(a.real, a.imag)
+# a = 1j + 10
+# print(a.real, a.imag)
 
 
 # File Handling
@@ -10,48 +28,71 @@ print(a.real, a.imag)
 # print(file.writable())
 
 # import math
-print('Hello Python'.istitle())
-print("abc".isalnum())
-print("hello python".capitalize())
+# print('Hello Python'.istitle())
+# print("abc".isalnum())
+# print("hello python".capitalize())
 
-print('hello' > 'hello')
-print('python' < 'Python')
+# print('hello' > 'hello')
+# print('python' < 'Python')
 
-print([1, 2] + [1, 2])
+# print([1, 2] + [1, 2])
 
-print(r'hello \n python')
+# print(r'hello \n python')
 
-a = {1, 2, 3, 4}
-a.add((1, 2))
-print(a)
+# a = {1, 2, 3, 4}
+# a.add((1, 2))
+# print(a)
 
-a = {1: 2, 2: 3, 3: 4}
-a[1] = 3
-print(a)
+# a = {1: 2, 2: 3, 3: 4}
+# a[1] = 3
+# print(a)
 
-a = 5
-b = 2
-x = a > b and not (a == b)
-y = a ** 3
-z = a/b
-t = 1, 2, 3, 4
-print(x, y, z)
-print(type(x), type(y), type(z), type(t))
+# a = 5
+# b = 2
+# x = a > b and not (a == b)
+# y = a ** 3
+# z = a/b
+# t = 1, 2, 3, 4
+# print(x, y, z)
+# print(type(x), type(y), type(z), type(t))
 
-a = {1: 2, 2: 3, 3: 4}
-x = a.get(5)
-print(x)
+# a = {1: 2, 2: 3, 3: 4}
+# x = a.get(5)
+# print(x)
 
-l = [1, 2]
-print(l*2)
+# l = [1, 2]
+# print(l*2)
 
-a = "9 "
-print(a.isdigit())
+# a = "9 "
+# print(a.isdigit())
 
-print(random.randint(5, 15))
+# print(random.randint(5, 15))
 
-a = "Trishan is"
-print(a.split())
+# a = "Trishan is"
+# print(a.split())
+
+
+# def func():
+#     print("Hello World")
+
+
+# print(func())
+
+# x = "abc"
+# for i in range(x):
+#     print(i)
+
+# S = '  The    World is  Beautiful'
+# x = S.split()
+# print(x)
+
+# S = 'The\n\rWorld\tis Beautiful'
+# x = S.split()
+# print(x)
+
+# S = 'First Line\nSecond Line\nThird Line\nFourth Line\nFifth Line'
+# x = S.splitlines()
+# print(x)
 
 # n = file.write("Hello World!\n")
 # print(n)
@@ -92,15 +133,15 @@ print(a.split())
 # Functions
 
 
-def func(a, b):
-    return a ** b
+# def func(a, b):
+#     return a ** b
 
 
-def func2():
-    print("Trishan")
+# def func2():
+#     print("Trishan")
 
 
-print(func2())
+# print(func2())
 # print(func(2, 3))
 # print(func(b=2, a=3))
 
@@ -356,3 +397,219 @@ print(func2())
 # global, nonlocal keyword
 
 # Exception Handling
+
+
+a = "softwarica"
+
+print(a.upper())
+
+
+a = "@@PYTHON"
+
+print(a.isupper())
+
+
+a = "@@PYTHON"
+
+print("a".isupper())
+
+
+a = "capital"
+
+print("A".isupper())
+
+
+a = "capital"
+
+print("a")
+
+
+# a = "capital"
+
+# print(a.capitalize("c"))
+
+
+a = "      capital"
+
+print(a.isalnum())
+
+
+a = "capital"
+
+print(a.isalnum())
+
+
+a = "1Capital"
+
+print(a.zfill(9))
+
+
+a = "+Capital"
+
+print(a.zfill(9))
+
+
+a = "-Capital"
+
+print(a.zfill(9))
+
+
+a = "$Capital"
+
+print(a.zfill(9))
+
+
+# a = "$Capital"
+
+# print(a.zfill(9, "*"))
+
+
+# a = "$Capital"
+
+# print(a.center(9, "**"))
+
+
+a = "$Capital"
+
+print(a.center(9, "*"))
+
+
+a = "+Capital"
+
+print(a.center(9, "*"))
+
+
+a = "+Capital9"
+
+print(a.count("9"))
+
+
+a = "+Cap9ital9"
+
+print(a.find("9"))
+
+
+a = "+Cap9ital9"
+
+print(a.rfind("9"))
+
+
+a = "+Cap9ital9"
+
+print(a.find("A"))
+
+
+# a = "+Cap9ital9"
+
+# print(a.index("A"))
+
+
+a = "Cap9"
+
+print(a.isdigit())
+
+
+a = "pythON9"
+
+print(a.swapcase())
+
+
+a = "\t"
+
+print(a.isspace())
+
+
+a = "\t"
+
+print(a.isprintable())
+
+
+a = "123abc"
+
+print(a.isalpha())
+
+
+a = "123abc"
+
+print(a.rjust(11, "#"))
+
+
+a = "123abc"
+
+print(a.ljust(11, "#"))
+
+
+a = "123abc"
+
+print(a.ljust(6, "#"))
+
+
+# for="123abc"
+
+# print(for.ljust(6,"#"))
+
+
+a = "123abc"
+
+print(a.replace('w', "1"))
+
+
+a = "123abc"
+
+b = a.count("c")
+
+print(b)
+
+
+a = "123abc"
+
+b = a.maketrans("123", "abc")
+
+print(a.translate(b))
+
+
+a = "123abc"
+
+b = a.maketrans("123", "abc")
+
+print(b)
+
+
+a = "123abc"
+
+b = a.maketrans("A", "a")
+
+print(b)
+
+
+# a = "123abc"
+
+# b = a.maketrans("ab", "A")
+
+print(b)
+
+
+a = "123abc"
+
+b = a.startswith("123")
+
+print(a)
+
+
+a = "123abc"
+
+b = a.endswith("abc")
+
+print(a)
+
+
+a = "123abc"
+
+b = a.endswith("c")
+
+print(a)
+
+
+a = "123abc"
+
+print(a.replace('ab', "1"))
